@@ -1,0 +1,3 @@
+type Resp = {
+  index: number
+}
