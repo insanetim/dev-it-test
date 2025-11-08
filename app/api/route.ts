@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server'
 import { RateLimiter } from 'limiter'
+import { NextRequest, NextResponse } from 'next/server'
 
 import { REQUESTS_PER_SECOND } from '@/lib/constants'
 import { getRandomInRange, wait } from '@/lib/utils'

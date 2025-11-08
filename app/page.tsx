@@ -8,7 +8,7 @@ import RateLimiter from '@/lib/rateLimiter'
 import Semaphore from '@/lib/semaphore'
 
 export default function Home() {
-  const [resposesList, setResponsesList] = useState<Resp[]>([])
+  const [responsesList, setResponsesList] = useState<Resp[]>([])
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -92,7 +92,7 @@ export default function Home() {
         <p className='text-red-500'>{error}</p>
       ) : (
         <div className='flex flex-wrap gap-2'>
-          {resposesList.map(({ index }) => (
+          {responsesList.map(({ index }) => (
             <span key={index}>{index}</span>
           ))}
         </div>
